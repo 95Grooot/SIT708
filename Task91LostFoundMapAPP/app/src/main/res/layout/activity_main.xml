@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lost &amp; Found Manager"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp"
+        android:textColor="?attr/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnCreateAdvert"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Create a New Advert"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.Material3.Button" />
+
+    <Button
+        android:id="@+id/btnShowAllItems"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Show All Lost &amp; Found Items"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.Material3.Button.OutlinedButton" />
+
+    <Button
+        android:id="@+id/btnShowOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Show on Map"
+        android:textSize="16sp"
+        style="@style/Widget.Material3.Button.TonalButton" />
+
+</LinearLayout>

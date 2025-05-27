@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Lost And Found Manager</string>
+
+    <string name="google_maps_key" translatable="false">AIzaSyAcIqhRClIrsXoDXiXDrXSeT8V1mbmFqn8E</string>
+
+    <!-- Navigation -->
+    <string name="create_advert">Create a New Advert</string>
+    <string name="show_all_items">Show All Lost &amp; Found Items</string>
+    <string name="show_on_map">Show on Map</string>
+
+    <!-- Form Labels -->
+    <string name="item_name">Item Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="description">Description</string>
+    <string name="date">Date (DD/MM/YYYY)</string>
+    <string name="location">Location</string>
+    <string name="get_current_location">Get Current Location</string>
+    <string name="save">Save Advertisement</string>
+
+    <!-- Item Types -->
+    <string name="lost">Lost</string>
+    <string name="found">Found</string>
+
+    <!-- Map -->
+    <string name="show_all">Show All</string>
+    <string name="show_lost_only">Show Lost Only</string>
+    <string name="show_found_only">Show Found Only</string>
+
+    <!-- Messages -->
+    <string name="location_permission_denied">Location permission denied</string>
+    <string name="unable_to_get_location">Unable to get current location</string>
+    <string name="select_valid_location">Please select a valid location</string>
+    <string name="item_saved_successfully">Item saved successfully!</string>
+    <string name="error_saving_item">Error saving item</string>
+
+    <!-- Field validation -->
+    <string name="name_required">Name is required</string>
+    <string name="phone_required">Phone is required</string>
+    <string name="description_required">Description is required</string>
+    <string name="date_required">Date is required</string>
+    <string name="location_required">Location is required</string>
+</resources>

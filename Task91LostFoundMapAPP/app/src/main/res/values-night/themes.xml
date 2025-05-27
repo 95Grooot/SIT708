@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for DARK MODE -->
+    <style name="Theme.LostAndFoundManager" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color for dark mode -->
+        <item name="colorPrimary">#82B1FF</item>
+        <item name="colorPrimaryVariant">#5983CC</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#03DAC6</item>
+        <item name="colorSecondaryVariant">#03DAC6</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color for dark mode -->
+        <item name="android:statusBarColor">#5983CC</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Background colors for dark theme -->
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#E0E0E0</item>
+
+        <!-- DARK MODE: Dark ActionBar with light blue icons -->
+        <item name="actionBarStyle">@style/Widget.LostAndFound.ActionBar.Dark</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.LostAndFound.ActionBar.Dark</item>
+
+        <!-- LIGHT BLUE navigation icon for dark mode -->
+        <item name="colorControlNormal">#82B1FF</item>
+
+        <!-- Text colors for dark theme -->
+        <item name="android:textColorPrimary">#E0E0E0</item>
+        <item name="android:textColorSecondary">#B0B0B0</item>
+        <item name="android:textColorHint">#707070</item>
+    </style>
+
+    <!-- DARK ActionBar for night mode -->
+    <style name="Widget.LostAndFound.ActionBar.Dark" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:background">#1E1E1E</item>
+        <item name="titleTextColor">#82B1FF</item>
+        <item name="subtitleTextColor">#82B1FF</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Dark ActionBar Theme Overlay -->
+    <style name="ThemeOverlay.LostAndFound.ActionBar.Dark" parent="ThemeOverlay.Material3.Dark.ActionBar">
+        <item name="android:textColorPrimary">#82B1FF</item>
+        <item name="android:textColorSecondary">#82B1FF</item>
+        <item name="colorControlNormal">#82B1FF</item>
+        <item name="colorOnSurface">#82B1FF</item>
+        <item name="android:background">#1E1E1E</item>
+    </style>
+</resources>
