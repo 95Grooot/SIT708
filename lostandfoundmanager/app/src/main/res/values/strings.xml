@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Lost &amp; Found Manager</string>
+
+    <!-- Main Screen -->
+    <string name="create_new_advert">Create a New Advert</string>
+    <string name="show_all_items">Show All Lost &amp; Found Items</string>
+
+    <!-- Create Advert Screen -->
+    <string name="create_new_advert_title">Create New Advert</string>
+    <string name="type_label">Type:</string>
+    <string name="lost">Lost</string>
+    <string name="found">Found</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="save">Save</string>
+
+    <!-- All Items Screen -->
+    <string name="all_lost_found_items">All Lost &amp; Found Items</string>
+
+    <!-- Item Detail Screen -->
+    <string name="item_details">Item Details</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Messages -->
+    <string name="advert_saved">Advert saved successfully!</string>
+    <string name="item_removed">Item removed successfully</string>
+    <string name="item_not_found">Item not found</string>
+    <string name="confirm_remove">Are you sure you want to remove this item?</string>
+    <string name="remove_item_title">Remove Item</string>
+
+    <!-- Validation Messages -->
+    <string name="name_required">Name is required</string>
+    <string name="phone_required">Phone is required</string>
+    <string name="description_required">Description is required</string>
+    <string name="location_required">Location is required</string>
+
+    <!-- Format Strings -->
+    <string name="date_format">Date: %s</string>
+    <string name="location_format">Location: %s</string>
+    <string name="contact_format">Contact: %s - %s</string>
+    <string name="item_title_format">%s: %s</string>
+</resources>
