@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+
+    <!-- Main Activity -->
+    <string name="add_task">Add Task</string>
+    <string name="empty_state_title">No tasks yet!</string>
+    <string name="empty_state_subtitle">Tap the + button to create your first task</string>
+
+    <!-- Task Form -->
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="due_date">Due Date</string>
+    <string name="save_task">Save Task</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="select_date">Select Date</string>
+
+    <!-- Task Status -->
+    <string name="completed">Completed</string>
+    <string name="pending">Pending</string>
+    <string name="overdue">Overdue</string>
+
+    <!-- Menu Options -->
+    <string name="show_all">Show All</string>
+    <string name="show_incomplete">Show Incomplete</string>
+    <string name="show_completed">Show Completed</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <!-- Messages -->
+    <string name="delete_task_title">Delete Task</string>
+    <string name="delete_task_message">Are you sure you want to delete this task?</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="task_created">Task created successfully</string>
+    <string name="task_updated">Task updated successfully</string>
+    <string name="task_completed">Task marked as completed</string>
+    <string name="task_pending">Task marked as pending</string>
+
+    <!-- Validation -->
+    <string name="title_required">Title is required</string>
+    <string name="description_required">Description is required</string>
+    <string name="past_date_error">Due date cannot be in the past</string>
+</resources>
