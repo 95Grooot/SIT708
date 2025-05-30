@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/calculator_background">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIT708 Calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/calculator_primary"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Result Display Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/calculator_display_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Operation Display -->
+            <TextView
+                android:id="@+id/textViewOperation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="@color/calculator_text_secondary"
+                android:gravity="end"
+                android:layout_marginBottom="8dp"
+                android:minHeight="30dp" />
+
+            <!-- Result Display -->
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/calculator_text_primary"
+                android:gravity="end"
+                android:minHeight="50dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Input Fields Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- First Number Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Number"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/calculator_text_primary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter first number"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="18sp"
+                android:background="@drawable/calculator_input_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/calculator_text_primary"
+                android:textColorHint="@color/calculator_text_hint" />
+
+            <!-- Second Number Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Number"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/calculator_text_primary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter second number"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="18sp"
+                android:background="@drawable/calculator_input_background"
+                android:padding="16dp"
+                android:textColor="@color/calculator_text_primary"
+                android:textColorHint="@color/calculator_text_hint" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Operation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/calculator_button_add"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="−"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/calculator_button_subtract"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- Clear Button -->
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Clear"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/calculator_button_clear"
+        android:textColor="@color/calculator_text_primary" />
+
+    <!-- Instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter two numbers and tap + or − to calculate"
+        android:textSize="14sp"
+        android:textColor="@color/calculator_text_secondary"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:padding="16dp" />
+
+</LinearLayout>

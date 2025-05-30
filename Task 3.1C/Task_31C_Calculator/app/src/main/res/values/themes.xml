@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Calculator Theme -->
+    <style name="Theme.SIT708Calculator" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/calculator_primary</item>
+        <item name="colorPrimaryVariant">@color/calculator_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/calculator_add_button</item>
+        <item name="colorSecondaryVariant">@color/calculator_add_button_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/calculator_background</item>
+        <item name="backgroundColor">@color/calculator_background</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/calculator_text_primary</item>
+        <item name="android:textColorSecondary">@color/calculator_text_secondary</item>
+    </style>
+
+    <!-- No Action Bar Theme -->
+    <style name="Theme.SIT708Calculator.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Calculator Button Styles -->
+    <style name="CalculatorButtonPrimary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/calculator_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CalculatorButtonOperation" parent="Widget.Material3.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Input Field Style -->
+    <style name="CalculatorInputField" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/calculator_text_primary</item>
+        <item name="android:textColorHint">@color/calculator_text_hint</item>
+    </style>
+
+</resources>

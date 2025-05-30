@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIT305 Quiz App</string>
+
+    <!-- Main Activity -->
+    <string name="app_title">SIT305 Quiz App</string>
+    <string name="app_subtitle">Test your knowledge!</string>
+    <string name="enter_name_label">Enter your name</string>
+    <string name="name_hint">Your name here...</string>
+    <string name="start_button">START</string>
+    <string name="high_score_format">High Score: %1$d/5</string>
+    <string name="instructions">Answer 5 questions and test your knowledge!</string>
+    <string name="please_enter_name">Please enter your name</string>
+
+    <!-- Quiz Activity -->
+    <string name="welcome_format">Welcome, %1$s!</string>
+    <string name="progress_format">%1$d/5</string>
+    <string name="question_title_format">Question %1$d</string>
+    <string name="timer_format">Time: %1$ds</string>
+    <string name="times_up">Time\'s up!</string>
+    <string name="submit_button">Submit</string>
+    <string name="next_button">Next</string>
+    <string name="view_results_button">View Results</string>
+
+    <!-- Result Activity -->
+    <string name="congratulations_format">Congratulations %1$s!</string>
+    <string name="score_format">Your Score: %1$d/%2$d</string>
+    <string name="percentage_format">Percentage: %1$d%%</string>
+    <string name="new_high_score">🎉 NEW HIGH SCORE! 🎉</string>
+    <string name="take_new_quiz_button">Take New Quiz</string>
+    <string name="finish_button">Finish</string>
+
+    <!-- Content Descriptions -->
+    <string name="quiz_logo_desc">Quiz App Logo</string>
+    <string name="trophy_icon_desc">Trophy Icon</string>
+
+    <!-- Quiz Questions -->
+    <string name="question_1">What is the capital of Australia?</string>
+    <string name="question_1_option_1">Sydney</string>
+    <string name="question_1_option_2">Melbourne</string>
+    <string name="question_1_option_3">Canberra</string>
+
+    <string name="question_2">Which programming language is primarily used for Android development?</string>
+    <string name="question_2_option_1">Java</string>
+    <string name="question_2_option_2">Kotlin</string>
+    <string name="question_2_option_3">Both Java and Kotlin</string>
+
+    <string name="question_3">What does SIT305 stand for?</string>
+    <string name="question_3_option_1">Software Engineering</string>
+    <string name="question_3_option_2">Mobile Application Development</string>
+    <string name="question_3_option_3">Database Systems</string>
+
+    <string name="question_4">Which company developed the Android operating system?</string>
+    <string name="question_4_option_1">Apple</string>
+    <string name="question_4_option_2">Google</string>
+    <string name="question_4_option_3">Microsoft</string>
+
+    <string name="question_5">What is the latest version of Android as of 2024?</string>
+    <string name="question_5_option_1">Android 13</string>
+    <string name="question_5_option_2">Android 14</string>
+    <string name="question_5_option_3">Android 15</string>
+</resources>

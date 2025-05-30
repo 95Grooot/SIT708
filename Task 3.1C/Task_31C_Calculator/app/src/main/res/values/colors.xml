@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Quiz App Colors -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_color">#FF4081</color>
+    <color name="accent_light">#FF80AB</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_card">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- Status Colors -->
+    <color name="success_color">#4CAF50</color>
+    <color name="error_color">#F44336</color>
+    <color name="warning_color">#FF9800</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#2196F3</color>
+    <color name="button_secondary">#E3F2FD</color>
+    <color name="button_option">#F5F5F5</color>
+    <color name="button_selected">#E0E0E0</color>
+
+    <!-- Timer Colors -->
+    <color name="timer_background">#FFF3E0</color>
+    <color name="timer_urgent">#FF5722</color>
+
+    <!-- Default Android Colors (Required) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Calculator Colors -->
+    <color name="calculator_primary">#2196F3</color>
+    <color name="calculator_primary_dark">#1976D2</color>
+    <color name="calculator_background">#F5F5F5</color>
+    <color name="calculator_display_bg">#FFFFFF</color>
+
+    <!-- Calculator Text Colors -->
+    <color name="calculator_text_primary">#212121</color>
+    <color name="calculator_text_secondary">#757575</color>
+    <color name="calculator_text_hint">#BDBDBD</color>
+
+    <!-- Calculator Button Colors -->
+    <color name="calculator_add_button">#4CAF50</color>
+    <color name="calculator_add_button_dark">#2E7D32</color>
+    <color name="calculator_subtract_button">#FF5722</color>
+    <color name="calculator_subtract_button_dark">#C62828</color>
+    <color name="calculator_clear_button">#E0E0E0</color>
+    <color name="calculator_clear_button_dark">#BDBDBD</color>
+
+    <!-- Calculator Input Field Colors -->
+    <color name="calculator_input_bg">#FAFAFA</color>
+    <color name="calculator_input_border">#E0E0E0</color>
+    <color name="calculator_input_border_focus">#2196F3</color>
+</resources>
