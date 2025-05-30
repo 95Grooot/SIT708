@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Llama ChatBot</string>
+    <string name="welcome">Welcome,</string>
+    <string name="lets_chat">Lets Chat!</string>
+    <string name="username_hint">Username</string>
+    <string name="go">Go</string>
+    <string name="welcome_user">Welcome User!</string>
+    <string name="type_message">Type a message...</string>
+    <string name="send_message">Send message</string>
+</resources>
