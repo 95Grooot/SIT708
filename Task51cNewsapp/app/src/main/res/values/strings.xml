@@ -1,0 +1,12 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">Task 5.1C</string>
+    <string name="news">News</string>
+    <string name="itube">iTube</string>
+    <string name="top_stories">TOP STORIES</string>
+    <string name="related_stories">RELATED STORIES</string>
+    <string name="my_playlist">MY PLAYLIST</string>
+    <string name="play">PLAY</string>
+    <string name="add_to_playlist">ADD TO PLAYLIST</string>
+    <string name="youtube_url_hint">Paste YouTube URL here</string>
+</resources>
