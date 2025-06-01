@@ -7,12 +7,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.android.volley.DefaultRetryPolicy
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.llamachatbot.databinding.ActivityChatBinding
-import kotlinx.coroutines.*
-import org.json.JSONObject
-import java.io.OutputStreamWriter
-import java.net.HttpURLConnection
-import java.net.URL
 
 class ChatActivity : AppCompatActivity() {
     private lateinit var binding: ActivityChatBinding
@@ -20,8 +19,9 @@ class ChatActivity : AppCompatActivity() {
     private val messages = mutableListOf<ChatMessage>()
     private var username: String = ""
 
-
-    private val BACKEND_URL = " http://127.0.0.1:5001"
+    // FIXED: Use correct emulator URL and port
+    private val BACKEND_URL = "http://10.0.2.2:5001/chat" // For Android Emulator
+    // Use "http://192.168.x.x:5001/chat" for physical device (replace with your computer's IP)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,13 +64,14 @@ class ChatActivity : AppCompatActivity() {
     }
 
     private fun sendWelcomeMessage() {
-        addMessage("Welcome User!", false)
+        addMessage("Welcome $username! I'm your Llama 2 ChatBot. How can I help you today?", false)
     }
 
     private fun sendMessage() {
         val messageText = binding.messageEditText.text.toString().trim()
 
         if (messageText.isEmpty()) {
+            Toast.makeText(this, "Please enter a message", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -81,7 +82,7 @@ class ChatActivity : AppCompatActivity() {
         // Show typing indicator
         showTypingIndicator(true)
 
-        // Send message to backend
+        // Send message to backend using Volley
         sendMessageToBackend(messageText)
     }
 
@@ -96,64 +97,57 @@ class ChatActivity : AppCompatActivity() {
     }
 
     private fun sendMessageToBackend(message: String) {
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val response = makeHttpRequest(message)
+        Log.d("ChatActivity", "Sending message to backend: '$message'")
+        Log.d("ChatActivity", "Backend URL: $BACKEND_URL")
 
-                withContext(Dispatchers.Main) {
-                    showTypingIndicator(false)
-                    if (response != null) {
-                        addMessage(response, false)
-                    } else {
-                        addMessage("Sorry, I'm having trouble connecting. Please try again.", false)
-                    }
+        val request = object : StringRequest(
+            Request.Method.POST, BACKEND_URL,
+            { response ->
+                // Hide typing indicator and show response
+                showTypingIndicator(false)
+                Log.d("ChatActivity", "Raw backend response: '$response'")
+                val botMessage = response.trim()
+                if (botMessage.isNotEmpty()) {
+                    addMessage(botMessage, false)
+                } else {
+                    addMessage("Sorry, I received an empty response from the server.", false)
                 }
-            } catch (e: Exception) {
-                Log.e("ChatActivity", "Error sending message", e)
-                withContext(Dispatchers.Main) {
-                    showTypingIndicator(false)
-                    addMessage("Sorry, something went wrong. Please try again.", false)
-                }
+            },
+            { error ->
+                // Hide typing indicator and show error
+                showTypingIndicator(false)
+                val errorMessage = "Sorry, I couldn't connect to the server. Please make sure the backend is running."
+                addMessage(errorMessage, false)
+                Log.e("ChatActivity", "Volley error: ${error.message}")
+                Log.e("ChatActivity", "Error details: ${error.networkResponse?.let { String(it.data) }}")
+                Toast.makeText(this, "Connection error", Toast.LENGTH_SHORT).show()
+            }
+        ) {
+            // FIXED: Send form data with correct parameter name
+            override fun getParams(): MutableMap<String, String> {
+                val params = HashMap<String, String>()
+                params["userMessage"] = message  // Flask expects 'userMessage', not 'message'
+                Log.d("ChatActivity", "Request params: $params")
+                return params
+            }
+
+            // FIXED: Use correct Content-Type for form data
+            override fun getHeaders(): MutableMap<String, String> {
+                val headers = HashMap<String, String>()
+                headers["Content-Type"] = "application/x-www-form-urlencoded"
+                Log.d("ChatActivity", "Request headers: $headers")
+                return headers
             }
         }
-    }
 
-    private suspend fun makeHttpRequest(message: String): String? {
-        return try {
-            val url = URL(BACKEND_URL)
-            val connection = url.openConnection() as HttpURLConnection
+        // Set timeout and retry policy (Ollama can be slower)
+        request.retryPolicy = DefaultRetryPolicy(
+            45000, // 45 seconds timeout (Ollama can be slower than direct models)
+            DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+            DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
+        )
 
-            connection.requestMethod = "POST"
-            connection.setRequestProperty("Content-Type", "application/json")
-            connection.doOutput = true
-
-            // Create JSON payload
-            val jsonPayload = JSONObject().apply {
-                put("message", message)
-                put("username", username)
-            }
-
-            // Send request
-            OutputStreamWriter(connection.outputStream).use { writer ->
-                writer.write(jsonPayload.toString())
-                writer.flush()
-            }
-
-            // Read response
-            if (connection.responseCode == HttpURLConnection.HTTP_OK) {
-                connection.inputStream.bufferedReader().use { reader ->
-                    val response = reader.readText()
-                    val jsonResponse = JSONObject(response)
-                    jsonResponse.optString("response", "No response from server")
-                }
-            } else {
-                Log.e("ChatActivity", "HTTP Error: ${connection.responseCode}")
-                null
-            }
-        } catch (e: Exception) {
-            Log.e("ChatActivity", "Network error", e)
-            // For demo purposes, return a mock response
-            "Hello! I'm a Llama 2 chatbot. How can I help you today?"
-        }
+        // Add request to queue
+        Volley.newRequestQueue(this).add(request)
     }
 }
