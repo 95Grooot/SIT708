@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_edit_text_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/edit_text_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_activity_dashboard.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_activity_task.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/activity_task.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_activity_interests.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/activity_interests.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_difficulty_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/difficulty_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_ic_logout.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_activity_results.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/activity_results.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_item_task.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/item_task.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/xml_backup_rules.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_item_interest.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/item_interest.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_activity_login.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_ic_person_add.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/ic_person_add.xml"
+    },
+    {
+        "merged": "com.example.personalizedlearning.app-debug-39:/layout_item_interest.xml.flat",
+        "source": "com.example.personalizedlearning.app-main-41:/layout/item_interest.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_interest_item_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/interest_item_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_activity_signup.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_circle_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/circle_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_radio_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/radio_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_button_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/button_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_ic_person.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_feedback_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/feedback_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/layout_activity_main.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_task_item_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/task_item_background.xml"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-debug-39:/drawable_result_background.xml.flat",
+        "source": "/Users/shenalfernando/.gradle/daemon/8.11.1/com.example.personalizedlearning.app-main-41:/drawable/result_background.xml"
+    }
+]
